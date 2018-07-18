@@ -1,0 +1,66 @@
+.coaching {
+	background-color: $mainPaper;
+
+	&__row {
+		margin-top: 40px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		background-color: rgba($mainSilk, .2);
+	}
+
+	&__features {
+
+		&__title {
+			font-weight: 100;
+			font-size: 1.5rem;
+
+			@mixin atMedium {
+				font-size: 2rem;
+			}
+		}
+		&__item {
+			background-color: white;
+			border: 5px solid $mainSilk;
+
+			h4 {
+				font-family: $fontSerif;
+				font-weight: lighter;
+				font-size: 22px;
+				padding: 10px;
+				color: $mainCharcoal;
+				text-align: center;
+			}
+		}
+
+		&__icon {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			color: $mainGold;
+			font-size: 35px;
+		}
+
+		&__button {
+			background-color: $mainGold;
+			border: 2px solid $mainGold;
+			border-radius: 10px;
+			color: white;
+			display: block;
+			margin: 0 auto;
+			padding: .55rem 1rem;
+			outline: none;
+			cursor: pointer;
+			text-decoration: none;
+			transition: .25s all ease;
+
+			&:hover {
+				background-color: transparent;
+				color: $mainCharcoal;
+			}
+		}
+
+		&__description {
+			font-size: 18px;
+		}
+	}
+}

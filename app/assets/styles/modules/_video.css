@@ -1,0 +1,73 @@
+.video {
+  height: 500px;
+  width: 100vw;
+/*   padding-bottom: 50px;
+  padding-top: 50px;  */
+  position: relative;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../assets/images/pachwork-hero.jpg');
+
+  @mixin atLarge {
+    background-image: none;
+    /* background-color: rgba($mainGold,0.7); */
+  }
+
+  .video-overlay {
+    background-color: rgba($mainSilk,0.0);
+    width: 100vw;
+    height: 500px;
+    bottom:0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    @mixin atLarge {
+      background-color: rgba($mainSilk,0.5);
+    }
+  }
+
+  video {
+    display: none;
+
+    @mixin atLarge {
+      display: block;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+      height: auto;
+      z-index: -999;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-size: auto;
+    }
+  }
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+
+  h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+}
+}

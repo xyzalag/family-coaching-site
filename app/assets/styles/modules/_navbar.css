@@ -1,0 +1,12 @@
+.navbar--color {
+  background-color: $mainCharcoal;
+}
+
+.nav-link {
+	font-family: $fontSans;
+	
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: $mainGold;
+	transition: all .25s ease;
+}

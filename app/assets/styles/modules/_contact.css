@@ -1,0 +1,62 @@
+.contact  {
+	background-color: $mainSilk;
+
+	&__container {
+		background-color: $mainPaper;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	&__subtitle {
+		font-family: $fontSans;
+		font-weight: 500;
+		color: $mainGold;
+	}
+
+	&__social a {
+		width: 100%;
+	}
+
+	&__social__btn {
+		border: 2px solid $mainGold;
+		color: $mainCharcoal;
+		font-size: 16px;
+		background: transparent;
+		font-weight: 100;
+		border-radius: 8px;
+		  text-decoration: none;
+		  padding: .5rem .5rem;
+		  display: inline-block;
+		  outline: none;
+		  text-align:center;
+		  transition: all .25s ease;
+		  margin-top: 20px;
+
+		@mixin atLarge {
+			font-size: 22px;
+			padding: .75rem 1.2rem;
+			margin-top: none;
+		}
+
+		&:hover{
+			background-color: $mainGold;
+			color: white;
+			border: 2px solid $mainGold;
+		}
+
+		&--tel {
+			background-color: $mainGold;
+
+			a{
+				color: white;
+			}
+
+			&:hover {
+				cursor: default;
+				color:white;
+				background-color: $mainGold;
+				border: 2p solid $mainGold;
+			}
+		}
+	}
+}

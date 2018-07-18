@@ -1,0 +1,72 @@
+.workshops {
+	background-color: $mainPaper;
+
+	&__row {
+		margin-top: 40px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		background-color: rgba($mainSilk, .2);
+	}
+
+	&__details {
+		font-size: 18px;
+	}
+	&__features {
+
+		&__title {
+			font-weight: 100;
+			font-size: 18px;
+
+			@mixin atLarge{
+				font-size: 22px;
+			}
+		}
+
+		&__item {
+			background-color: white;
+			border: 5px solid $mainSilk;
+
+			h4 {
+				font-family: $fontSans;
+				font-weight: lighter;
+				font-size: 22px;
+				padding: 10px;
+				color: $mainGold;
+				text-align: center;
+
+				@mixin atLarge {
+					font-size: 28px;
+				}
+			}
+		}
+
+		&__button {
+			background-color: $mainGold;
+			border: 2px solid $mainGold;
+			border-radius: 10px;
+			color: white;
+			display: block;
+			margin: 0 auto;
+			padding: .55rem 1rem;
+			outline: none;
+			cursor: pointer;
+			text-decoration: none;
+			transition: .25s all ease;
+
+			&:hover {
+				background-color: transparent;
+				color: $mainCharcoal;
+			}
+		}
+
+		&__description {
+			font-size: 20px;
+		}
+
+		li {
+			list-style-type: circle;
+			font-family: $fontSerif;
+			line-height: 1.5;
+		}
+	}
+}

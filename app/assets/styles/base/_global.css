@@ -1,0 +1,56 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  color: #333;
+  overflow-x: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover{
+  color: #FFF;
+}
+
+.hide {
+  display: none;
+}
+
+.line {
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid $mainCharcoal;
+  border-radius: 3px;
+
+  &--light {
+    border: 2px solid $mainPaper;
+  }
+
+  &--sm {
+    width: 6%;
+  }
+
+  &--gold {
+    border: 1px solid $mainGold;
+  }
+}
+
+address {
+  font-style: normal;
+  font-size: 1.5em;
+}

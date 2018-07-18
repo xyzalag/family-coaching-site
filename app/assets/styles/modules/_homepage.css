@@ -1,0 +1,60 @@
+.homepage {
+	background-color: $mainPaper;
+
+	&__row {
+		margin-top: 40px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		background-color: rgba($mainSilk, .2);
+	}
+
+	&__avatar{
+		border-radius: 100%;
+		text-align: center;
+		border: 10px solid rgba($mainGold, .5);
+		margin: 10px auto;
+		display: block;
+	}
+
+	&__image{
+		/* background-color: $mainSilk; */
+	}
+
+	&__description {
+		color: $mainCharcoal;
+		font-family: 'Playfair Display', serif;
+    	font-weight: 300;
+    	padding: 15px 23px 5px 23px;
+    	/* border: 5px solid $mainSilk; */
+    	background-color: $mainPaper;
+	}
+
+	&__features {
+
+		&__title {
+			font-weight: 100;
+			text-transform: uppercase;
+		}
+		&__item {
+			background-color: white;
+			border: 5px solid $mainSilk;
+
+			h4 {
+				font-family: $fontSans;
+				font-size: 18px;
+				padding: 10px;
+				font-weight: 400;
+				color: $mainCharcoal;
+				text-align: center;
+			}
+		}
+
+		&__icon {
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+			color: $mainGold;
+			font-size: 35px;
+		}
+	}
+}

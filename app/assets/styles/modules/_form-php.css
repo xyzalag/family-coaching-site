@@ -1,0 +1,19 @@
+.form-php {
+
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-color: $mainPaper;
+
+	h1 {
+		font-family: $fontSans;
+		color: $mainCharcoal;
+		font-size: 40px;
+		text-align: center;
+		@mixin centerer; 
+		color: #FFF;
+		border: 5px solid $mainGold;
+		padding: 30px;
+		letter-spacing: 5px;
+	}
+}

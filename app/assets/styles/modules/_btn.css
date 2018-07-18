@@ -1,0 +1,48 @@
+.btn {
+  background-color: transparent;
+  color: #FFF;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  outline: none;
+  border-radius: 15px;
+
+
+  &--large{
+    padding: 1.1rem 1.9rem;
+    margin-top: 70px;
+
+    @mixin atSmall {
+      font-size: 1rem;
+    }
+  }
+
+  &--small{
+    padding: 0.7rem 1.1rem;
+    font-size: 1rem;
+  }
+
+  &--hero {
+    transition: all 0.3s ease;
+    display: none;
+    border: 2px solid $mainGold;
+
+
+    @mixin atLarge {
+      display: inline-block;
+    }
+
+    &:hover{
+      background-color: $mainGold;
+      color: $mainPaper;
+    }
+  }
+
+  &--subpage {
+    padding: .5rem 2rem;
+    border-radius: 0;
+    span {
+      font-size: 30px;
+    }
+  }
+}
