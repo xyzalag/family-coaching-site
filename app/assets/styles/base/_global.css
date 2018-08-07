@@ -34,21 +34,19 @@ a:hover{
   width: 15%;
   display: block;
   margin: 0 auto;
-  border: 2px solid $mainCharcoal;
+  border: 2px solid $mainGold;
   border-radius: 3px;
-
-  &--light {
-    border: 2px solid $mainPaper;
-  }
 
   &--sm {
     width: 6%;
   }
 
-  &--gold {
+  &--long {
+    width: 100%;
     border: 1px solid $mainGold;
   }
 }
+
 
 address {
   font-style: normal;

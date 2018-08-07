@@ -8,6 +8,22 @@
 		background-color: rgba($mainSilk, .2);
 	}
 
+	&__description {
+		font-weight: 100;
+		font-size: 15px;
+		border-top: 2px solid $mainGold;
+		border-bottom: 2px solid $mainGold;
+
+		@mixin atMedium {
+			font-size: 17px;
+		}
+
+
+		@mixin atLarge{
+			font-size: 18px;
+		}
+	}
+
 	&__features {
 
 		&__title {
@@ -62,5 +78,38 @@
 		&__description {
 			font-size: 18px;
 		}
+	}
+
+	&__parralax__text-container {
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__parallax__text{
+		@mixin centerer;
+		width: 100%;
+		border: 5px solid $mainGold;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@mixin atLarge {
+			width: 80%;
+		}
+
+		h2{
+			color: white;
+			font-family: $fontSans;
+			font-weight: 100;
+			font-size: .8rem;
+
+			@mixin atMedium {
+				font-size: 1.2rem;
+			}
+
+			@mixin atLarge {
+				font-size: 2rem;
+			}
+		} 
 	}
 }

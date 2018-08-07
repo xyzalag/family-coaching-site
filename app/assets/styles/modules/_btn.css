@@ -26,6 +26,8 @@
     transition: all 0.3s ease;
     display: none;
     border: 2px solid $mainGold;
+    color: $mainPaper;
+    background-color: transparent;
 
 
     @mixin atLarge {
@@ -34,7 +36,7 @@
 
     &:hover{
       background-color: $mainGold;
-      color: $mainPaper;
+      color: white;
     }
   }
 

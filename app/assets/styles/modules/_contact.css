@@ -2,61 +2,70 @@
 	background-color: $mainSilk;
 
 	&__container {
-		background-color: $mainPaper;
+		background-color: #fff;
 		padding-bottom: 10px;
 		padding-top: 10px;
 	}
 
-	&__subtitle {
-		font-family: $fontSans;
-		font-weight: 500;
+	&__info {
+		margin-top: 50px;
+		border: 10px solid $mainSilk;
+	}
+
+	&__icon__container{
+		width: 100px;
+		height: 100px;
+		margin: 20px auto;
+		display: block; 
+		border-radius: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__icon {
 		color: $mainGold;
+		font-size: 40px;
 	}
 
-	&__social a {
-		width: 100%;
-	}
-
-	&__social__btn {
-		border: 2px solid $mainGold;
+	&__label {
+		font-family: $fontSans;
 		color: $mainCharcoal;
-		font-size: 16px;
-		background: transparent;
-		font-weight: 100;
-		border-radius: 8px;
-		  text-decoration: none;
-		  padding: .5rem .5rem;
-		  display: inline-block;
-		  outline: none;
-		  text-align:center;
-		  transition: all .25s ease;
-		  margin-top: 20px;
+		font-weight: 300;
+		font-size: 1.7rem;
 
-		@mixin atLarge {
-			font-size: 22px;
-			padding: .75rem 1.2rem;
-			margin-top: none;
+		&--bold {
+			font-family: $fontSans;
+			font-weight: 400;
 		}
 
-		&:hover{
-			background-color: $mainGold;
-			color: white;
-			border: 2px solid $mainGold;
+		@mixin atMedium {
+			font-size: 2rem;
+		}
+	}
+
+	&__facebook {
+		width: 250px;
+		margin: 0 auto;
+		border: 3px solid $mainGold;
+		color: $mainGold;
+		padding: 20px 30px;
+		font-size: 20px;
+		transition: .25s all ease-out;
+
+		@mixin atMedium {
+			width: 300px;
+			font-size: 30px;
 		}
 
-		&--tel {
+		&:hover {
 			background-color: $mainGold;
+			color: #fff;
+			transform: translateY(10px)
+		}
 
-			a{
-				color: white;
-			}
-
-			&:hover {
-				cursor: default;
-				color:white;
-				background-color: $mainGold;
-				border: 2p solid $mainGold;
-			}
+		a:hover {
+			color: #fff;
 		}
 	}
 }

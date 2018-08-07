@@ -4,14 +4,16 @@
 	&__row {
 		margin-top: 40px;
 		padding-top: 40px;
-		padding-bottom: 30px;
-		background-color: rgba($mainSilk, .2);
+		padding-bottom: 40px;
+		background-color: red;
 	}
 
 	&__details {
 		font-size: 18px;
 	}
 	&__features {
+		padding-top: 40px;
+		padding-bottom: 40px;
 
 		&__title {
 			font-weight: 100;
@@ -24,14 +26,14 @@
 
 		&__item {
 			background-color: white;
-			border: 5px solid $mainSilk;
+			border: 10px solid $mainSilk;
 
 			h4 {
 				font-family: $fontSans;
-				font-weight: lighter;
+				font-weight: 400;
 				font-size: 22px;
 				padding: 10px;
-				color: $mainGold;
+				color: $mainGold; 
 				text-align: center;
 
 				@mixin atLarge {
@@ -42,7 +44,6 @@
 
 		&__button {
 			background-color: $mainGold;
-			border: 2px solid $mainGold;
 			border-radius: 10px;
 			color: white;
 			display: block;
@@ -66,7 +67,10 @@
 		li {
 			list-style-type: circle;
 			font-family: $fontSerif;
+			font-weight: lighter;
 			line-height: 1.5;
+			margin-bottom: 10px;
 		}
 	}
 }
+

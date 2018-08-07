@@ -1,12 +1,27 @@
 .navbar--color {
-  background-color: $mainCharcoal;
+  background-color: rgba($mainCharcoal, 0.9);
+
+  	.navbar-nav .nav-link {
+  		color: $mainPaper;
+  		font-family: $fontSans;
+  		font-weight: 400;
+  		transition: all .25s ease;
+
+  		&:hover {
+  			color: $mainGold;
+  		}
+  	}
+
+  	.navbar-brand {
+  		color: $mainPaper;
+  	}
 }
 
-.nav-link {
-	font-family: $fontSans;
-	
-}
-.navbar-dark .navbar-nav .nav-link {
+.navbar-nav .nav-item .active {
 	color: $mainGold;
-	transition: all .25s ease;
 }
+.navbar-toggler {
+  color: #fff;
+}
+
+

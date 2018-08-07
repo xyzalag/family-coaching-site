@@ -12,11 +12,11 @@
 
   @mixin atLarge {
     background-image: none;
-    /* background-color: rgba($mainGold,0.7); */
+    /* background-color: rgba($mainPink,0.7); */
   }
 
   .video-overlay {
-    background-color: rgba($mainSilk,0.0);
+    background-color: rgba($mainGold,0.0);
     width: 100vw;
     height: 500px;
     bottom:0;
@@ -24,7 +24,7 @@
     padding-top: 50px;
 
     @mixin atLarge {
-      background-color: rgba($mainSilk,0.5);
+      background-color: rgba($mainGold,0.7);
     }
   }
 
